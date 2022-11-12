@@ -1,0 +1,35 @@
+
+<!-- <script>-->
+<!--const number = prompt("Enter a number: ");-->
+
+<!--if (number >= 0) {-->
+<!--if (number == 0) {-->
+<!--console.log(" number is zero");-->
+<!--} else-->
+<!--    {-->
+<!--console.log(" positive number");-->
+<!--}-->
+<!--}-->
+<!--else-->
+
+<!--{-->
+<!--console.log("negatuve number");-->
+<!--}-->
+<!-- </script>-->
+
+
+<h3>Counter:</h3>
+<label id="count"></label><br><br>
+<button onclick="counterFunc()">Click</button>
+<button onclick="resetFunc()">Reset</button>
+<script>
+count = 0;
+function counterFunc(){
+count++;
+document.getElementById("count").innerHTML = count;
+}
+function resetFunc(){
+ count=0;
+ document.getElementById("count").innerHTML = count;
+}
+</script>
